@@ -1,0 +1,201 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  background-image: url('Images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Navigation Styles */
+
+.main-nav {
+  background-color: #333;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.nav__items {
+  display: flex;
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+
+.nav__item {
+  margin-right: 20px; /* Adjust as needed to add space between links */
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #333; /* Change color as needed */
+}
+
+
+.main-nav .nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav .nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.main-nav .nav li:last-child {
+  margin-right: 0;
+}
+
+.main-nav .nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.main-nav .nav li a:hover {
+  background-color: #555;
+}
+.nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav li {
+  margin-right: 20px; /* Adjust as needed */
+}
+
+/* Header Styles */
+.short-header {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.title-tag {
+  font-size: 2.5rem;
+}
+.row {
+  text-align: left; /* Center align its children */
+}
+
+.row img {
+  display: block; /* Make the image a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Gallery styling */
+.work__boxes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 columns */
+  grid-gap: 0px; /* Gap between grid items */
+}
+
+.work__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work__image-box {
+  display: flex;
+  border-radius: 8px;
+}
+
+.work__image-box img {
+  display: block;
+  width: 200px; /* Set a fixed width for all images */
+  height: 200px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensure the image covers the box without stretching */
+  transition: transform 0.3s ease;
+}
+
+.work__image-box img:hover {
+  transform: scale(1.1);
+}
+
+/* Container Styles */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Content Styles */
+h1, h2, h3 {
+  color: #333;
+  margin-top: 1.5rem;
+}
+p {
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.contact-form textarea {
+  height: 150px;
+}
+.contact-form input[type="submit"] {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.contact-form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px; /* Adjust as needed to set the distance from the bottom */
+  width: 100%; /* Ensure the footer spans the entire width */
+  text-align: center; /* Center the social media icons */
+}
+.footer {
+  text-align: right; /* Align all content to the right within the footer */
+}
+
+.footer__photo {
+  width: 200px; /* Set the width of your photo */
+  height: 350px; /* Set the height of your photo */
+  margin-left: auto; /* Automatically adjust margin on the left to push the image to the right */
+  margin-right: 20px; /* Add a bit of space between the image and the right edge */
+}
+.footer__social-links {
+  display: flex;
+  justify-content: center; /* Align items horizontally at the center */
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+}
+.footer__social-link-item {
+  margin: 0 5px; /* Adjust spacing between icons */
+}
+.footer__social-image {
+  width: 50px; /* Adjust the size of the icons */
+  height: auto; /* Maintain aspect ratio */
+}
